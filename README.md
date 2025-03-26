@@ -1,5 +1,10 @@
 # ClippedCornerShape
 
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="./screenshots/Simulator Screenshot.png" width="45%" alt="Screenshot 1">
+  <img src="./screenshots/Simulator Screenshot 2.png" width="45%" alt="Screenshot 2">
+</div>
+
 ## Overview
 
 `ClippedCornerShape` is a flexible SwiftUI library that allows you to create custom shapes with clipped corners in various positions. This package provides a `Shape` and a `ViewModifier` that can be easily applied to any SwiftUI view to create unique, modern design elements.
