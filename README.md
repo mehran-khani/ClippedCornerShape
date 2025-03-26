@@ -1,16 +1,8 @@
 # ClippedCornerShape
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; max-width: 100%; width: 100%;">
-  <picture style="width: 45%; max-width: 45%;">
-    <source media="(max-width: 600px)" srcset="./screenshots/Simulator Screenshot.png">
-    <source media="(min-width: 601px)" srcset="./screenshots/Simulator Screenshot.png">
-    <img src="./screenshots/Simulator Screenshot.png" alt="Screenshot 1" style="width: 100%; height: auto; object-fit: contain;">
-  </picture>
-  <picture style="width: 45%; max-width: 45%;">
-    <source media="(max-width: 600px)" srcset="./screenshots/Simulator Screenshot 2.png">
-    <source media="(min-width: 601px)" srcset="./screenshots/Simulator Screenshot 2.png">
-    <img src="./screenshots/Simulator Screenshot 2.png" alt="Screenshot 2" style="width: 100%; height: auto; object-fit: contain;">
-  </picture>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px; width: 100%;">
+  <img src="./screenshots/Simulator Screenshot.png" style="width: 200px; height: auto; object-fit: contain;">
+  <img src="./screenshots/Simulator Screenshot 2.png" style="width: 200px; height: auto; object-fit: contain;">
 </div>
 
 ## Overview
