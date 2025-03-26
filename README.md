@@ -78,16 +78,44 @@ Image("example")
 ```swift
 struct DemoView: View {
     var body: some View {
-        VStack(spacing: 20) {
-            Rectangle()
-                .fill(Color.red)
-                .clippedCorner(clipX: 100, clipY: 50, position: .topRight)
-            
-            Rectangle()
-                .fill(Color.green)
-                .clippedCorner(clipX: 120, clipY: 60, cornerRadius: 24, position: .bottomLeft)
+        ZStack(alignment: .bottomTrailing) {
+            VStack(alignment: .leading, spacing: 20) {}
+                .frame(width: 350, height: 300)
+                .background(
+                    Material.regularMaterial
+                )
+                .clippedCorner(clipX: 100, clipY: 70, cornerRadius: 22, position: .bottomRight)
+                .shadow(color: .gray.opacity(0.7), radius: 6, x: 6, y: 8)
+                .padding(.horizontal)
+
+            HStack {
+                Button {} label: {
+                    ZStack {
+                        Circle()
+                            .fill(Color.red)
+                            .frame(width: 40, height: 40)
+                            .shadow(color: .gray.opacity(0.7), radius: 6, x: 3, y: 2)
+
+                        Image(systemName: "xmark")
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(.white)
+                    }
+                }
+                Button {} label: {
+                    ZStack {
+                        Circle()
+                            .fill(Color.green)
+                            .frame(width: 40, height: 40)
+                            .shadow(color: .gray.opacity(0.7), radius: 6, x: 3, y: 2)
+
+                        Image(systemName: "checkmark")
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(.white)
+                    }
+                }
+            }
+            .padding(.trailing)
         }
-        .padding()
     }
 }
 ```
