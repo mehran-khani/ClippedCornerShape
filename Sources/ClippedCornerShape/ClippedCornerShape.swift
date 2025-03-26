@@ -1,14 +1,14 @@
 import SwiftUI
 
 /// An enumeration representing the corner positions for clipping a shape.
-enum ClippedCornerPosition {
+public enum ClippedCornerPosition: Sendable {
     case topLeft
     case topRight
     case bottomLeft
     case bottomRight
 }
 
-struct ClippedCornerShape: Shape {
+public struct ClippedCornerShape: Shape {
     /// Creates a new ClippedCornerShape with custom parameters
     ///
     /// - Parameters:
@@ -22,7 +22,7 @@ struct ClippedCornerShape: Shape {
     var clipY: CGFloat = 70
     var position: ClippedCornerPosition = .bottomRight
     
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         
         switch position {
@@ -349,13 +349,13 @@ struct ClippedCornerShape: Shape {
 }
 
 /// A ViewModifier that applies the ClippedCornerShape to a view
-struct ClippedCornerModifier: ViewModifier {
+public struct ClippedCornerModifier: ViewModifier {
     var clipX: CGFloat
     var clipY: CGFloat
     var cornerRadius: CGFloat = 16
     var position: ClippedCornerPosition = .bottomRight
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .clipShape(ClippedCornerShape(
                 cornerRadius: cornerRadius,
@@ -366,7 +366,7 @@ struct ClippedCornerModifier: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     /// Applies a clipped corner effect to the view
     ///
     /// - Parameters:
