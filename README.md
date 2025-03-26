@@ -1,8 +1,8 @@
 # ClippedCornerShape
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="./screenshots/Simulator Screenshot.png" width="45%" height="500" alt="Screenshot 1">
-  <img src="./screenshots/Simulator Screenshot 2.png" width="45%" height="500" alt="Screenshot 2">
+  <img src="./screenshots/Simulator Screenshot.png" width="45%" height="700" alt="Screenshot 1">
+  <img src="./screenshots/Simulator Screenshot 2.png" width="45%" height="700" alt="Screenshot 2">
 </div>
 
 ## Overview
