@@ -5,11 +5,18 @@ import PackageDescription
 
 let package = Package(
     name: "ClippedCornerShape",
+    platforms: [
+        .iOS(.v13),
+        .macOS(.v12),
+        .watchOS(.v8),
+        .tvOS(.v15),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "ClippedCornerShape",
-            targets: ["ClippedCornerShape"]),
+            targets: ["ClippedCornerShape"]
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
